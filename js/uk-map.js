@@ -1,4 +1,4 @@
-d3.json('../json/uk_countries.json').then(function(json) {
+d3.json('json/uk_countries.json').then(function(json) {
 
     console.log(json);
 
