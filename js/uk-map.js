@@ -23,7 +23,7 @@ d3.json('json/uk_countries.json').then(function(json) {
 
     var csvData = ""
 
-    d3.csv('../dataset/CountriesIncidents.csv', d3.autoType).then(function (data) {
+    d3.csv('dataset/CountriesIncidents.csv', d3.autoType).then(function (data) {
         csvData = data;
     });
 
