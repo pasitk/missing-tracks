@@ -25,7 +25,7 @@ const bgOne = document.querySelector('#bg-one');
 const widthOne = 150;
 var ranNumsOne = shuffle([1,2,3,4,5,6,7,8,9,10]);
 var j = 0;
-var numOfPeopleOne = Math.floor(window.screen.width / widthOne);
+var numOfPeopleOne = Math.floor(window.innerWidth / widthOne);
 for (var i = 0; i<numOfPeopleOne; i++) {
     var elem = document.createElement("img");
     elem.setAttribute("src", "img/person-"+ranNumsOne[j]+".svg");
@@ -41,7 +41,7 @@ for (var i = 0; i<numOfPeopleOne; i++) {
 
 const bgTwo = document.querySelector('#bg-two');
 const widthTwo = 75;
-var numOfPeopleTwo = Math.floor(window.screen.width / widthTwo);
+var numOfPeopleTwo = Math.floor(window.innerWidth / widthTwo);
 for (var i = 0; i<numOfPeopleTwo; i++) {
     var elem = document.createElement("img");
     var num = Math.ceil(Math.random()*10);
@@ -53,7 +53,7 @@ for (var i = 0; i<numOfPeopleTwo; i++) {
 
 const bgThree = document.querySelector('#bg-three');
 const widthThree = 50;
-var numOfPeopleThree = Math.floor(window.screen.width / widthThree);
+var numOfPeopleThree = Math.floor(window.innerWidth / widthThree);
 for (var i = 0; i<numOfPeopleThree; i++) {
     var elem = document.createElement("img");
     var num = Math.ceil(Math.random()*10);
@@ -65,7 +65,7 @@ for (var i = 0; i<numOfPeopleThree; i++) {
 
 const bgFour = document.querySelector('#bg-four');
 const widthFour = 30;
-var numOfPeopleFour = Math.floor(window.screen.width / widthFour);
+var numOfPeopleFour = Math.floor(window.innerWidth / widthFour);
 for (var i = 0; i<numOfPeopleFour; i++) {
     var elem = document.createElement("img");
     var num = Math.ceil(Math.random()*10);
