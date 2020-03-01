@@ -681,7 +681,6 @@ header a:hover, .main-menu-item:hover {
 
 .content {
   padding: 1em;
-  height: 100%;
   color: #FFFFFF;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -692,10 +691,12 @@ header a:hover, .main-menu-item:hover {
 
 .bg-img {
   background-image: url("../img/bg-1.jpg");
+  height: 100%;
 }
 
 .bg-color {
   background-color: #000000;
+  height: 300px;
 }
 
 @media only screen and (max-device-width: 850px) {
