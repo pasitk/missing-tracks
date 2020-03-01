@@ -1,0 +1,55 @@
+<div class="site-name" id="site-name-header">
+    <a href="/">Missing Tracks</a>
+</div>
+<div class="mobile-menu" id="menu-btn">       <!-- Dropdown Menu with Hamburger Button  -->
+    <!--
+    *   CSS Hamburger fold-out menu (HTML Part)
+    *   This code was adapted from CodePen post by Erik Terwan
+    *   accessed 23-10-2019
+    *   https://codepen.io/erikterwan/pen/EVzeRP
+    *   Change <span> to <div>
+    -->
+    <div id="menu-toggle">                  <!-- Hamburger Button, created by 3 div in vertical line -->
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--
+    *   Checkbox for toggle open/close dropdown menu (HTML Part)
+    *   This code has written by myself, but inspired by Chris Coyier's content at css-tricks.com
+    *   accessed 23-10-2019
+    *   https://css-tricks.com/the-checkbox-hack/
+    -->
+    <label for="btn-toggle" id="label-btn-toggle">Open or Close Menu</label>    <!-- hidden label, just for accessibility -->
+    <input type="checkbox" id="btn-toggle"> <!-- Checkbox with opacity = 0, to open/close dropdown menu by css selector -->
+    <!--
+    *   Dropdown menu for mobile site (HTML Part)
+    *   This code was adapted from w3schools.com by apply classes in this site
+    *   accessed 23-10-2019
+    *   https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
+    -->
+    <div class="menu-dropdown-items">       <!-- Dropdown menu -->
+        <div class="main-menu-item-mobile" id="menu-mobile-users">
+            <div>In your area, Who are they?</div>
+        </div>
+        <div class="main-menu-item-mobile" id="menu-mobile-books">
+            <div>Behind missing incidents</div>
+        </div>
+        <div class="main-menu-item-mobile" id="menu-mobile-loans">
+            <div>Outstanding Factors</div>
+        </div>
+        <div class="main-menu-item-mobile" id="menu-mobile-loans">
+            <div>Citizens and Digital Power</div>
+        </div>
+        <div class="main-menu-item-mobile" id="menu-mobile-loans">
+            <div>About the data and methodology</div>
+        </div>
+    </div>
+</div>
+<div class="desktop-menu">
+    <div class="main-menu-item" ><div>In your area, Who are they?</div></div>
+    <div class="main-menu-item"><div>Behind missing incidents</div></div>
+    <div class="main-menu-item"><div>Outstanding Factors</div></div>
+    <div class="main-menu-item"><div>Citizens and Digital Power</div></div>
+    <div class="main-menu-item"><div>About the data and methodology</div></div>
+</div>
