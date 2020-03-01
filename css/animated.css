@@ -648,23 +648,6 @@ header a:hover, .main-menu-item:hover {
   z-index: 2;
 }
 
-.menu-dropdown-items a:link, .menu-dropdown-items a:visited {
-  color: #791B99;
-  /* change font color to align with theme color  */
-  padding: 7px 10px;
-  /* change padding size */
-  background-color: #f9f9f9;
-  display: block;
-  border-bottom: 1px solid #cccccc;
-  /* add 'border' to each menu item */
-}
-
-.menu-dropdown-items a:hover {
-  background-color: #9A55B2;
-  /* change background color to align with theme color */
-  color: #FFFFFF;
-}
-
 /* End of referenced code : Dropdown menu for mobile site */
 .main-menu-item-mobile {
   color: #FFFFFF;
@@ -715,9 +698,9 @@ header a:hover, .main-menu-item:hover {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), black), url("../img/bg-1.jpg");
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 850px) {
   body {
-    font-size: 12px;
+    font-size: 36px;
   }
 
   .left, .right {
@@ -733,7 +716,7 @@ header a:hover, .main-menu-item:hover {
   }
 
   .menu-dropdown-items {
-    font-size: 0.8em;
+    font-size: 1em;
     min-width: 30vw;
     max-width: 45vw;
     transform: translate(-70%, 45px);
@@ -746,8 +729,16 @@ header a:hover, .main-menu-item:hover {
   #btn-toggle:checked ~ .menu-dropdown-items {
     display: block;
   }
+
+  .header-1 {
+    margin-bottom: 1em;
+  }
+
+  .subunit-label {
+    font-size: 0.5em;
+  }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-device-width: 850px) {
   .left, .right {
     display: inline-block;
   }
@@ -767,7 +758,7 @@ header a:hover, .main-menu-item:hover {
     display: none;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
+@media only screen and (min-device-width: 850px) and (max-device-width: 1024px) {
   body {
     font-size: 14px;
   }
