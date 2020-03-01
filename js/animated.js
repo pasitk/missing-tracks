@@ -1,7 +1,7 @@
 setTimeout(function(){ 
     var introPage = document.getElementById('intro-page');
     introPage.remove();
-}, 10000);
+}, 3000);
 
 //https://stackoverflow.com/questions/18806210/generating-non-repeating-random-numbers-in-js
 function shuffle(array) {
