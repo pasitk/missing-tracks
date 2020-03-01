@@ -641,8 +641,6 @@ header a:hover, .main-menu-item:hover {
   padding: 1em;
   color: #FFFFFF;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -718,6 +716,11 @@ header a:hover, .main-menu-item:hover {
 
     .mobile-menu {
       display: none;
+    }
+
+    .content {
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
     }
 }
 
