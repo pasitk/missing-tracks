@@ -269,7 +269,7 @@ body {
   border: 1px solid #999999;
   border-radius: 0px 15px 0px 15px;
   border-left-width: 15px;
-  border-left-color: #FF0000;
+  border-left-color: #990000;
   margin-bottom: 0.75em;
   padding: 0.5em;
   vertical-align: middle;
@@ -304,9 +304,8 @@ a.sub-menu-link {
   font-family: "Special Elite", cursive;
   font-weight: bold;
   font-size: 2em;
-  color: #FF0000;
+  color: #FFFFFF;
   padding-bottom: 0.5vw;
-  text-shadow: 0px 0px 20px #000000;
 }
 
 .sub {
@@ -317,7 +316,6 @@ a.sub-menu-link {
 
 .quote {
   font-weight: lighter;
-  font-style: italic;
   color: #FFFFFF;
   padding-bottom: 1.5em;
 }
@@ -578,8 +576,8 @@ header a:hover, .main-menu-item:hover {
 
 #site-name-header > a {
   display: block;
-  padding-top: 1.5vw;
-  color: #FF0000;
+  padding-top: 1vw;
+  color: #FFFFFF;
 }
 
 #menu-btn {
