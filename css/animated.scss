@@ -648,8 +648,8 @@ header a:hover, .main-menu-item:hover {
   padding-bottom: 0.1em;
 }
 
-.content {
-  padding: 1em;
+.story {
+  padding: 2em;
   color: #FFFFFF;
 
   // background-position: center;
@@ -660,13 +660,92 @@ header a:hover, .main-menu-item:hover {
 .bg-img {
   // background-image: url('../img/bg-1.jpg');
   height: 100%; 
+  text-shadow: 0px 0px 10px #000000;
 }
 
 .bg-color {
-  background-color: #000000;
-  height: 300px;
+  height: max-content;
   // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../img/bg-1.jpg');
 }
+
+.black-100 {
+  background-color: rgba(0,0,0,1);
+}
+
+.black-75 {
+  background-color: rgba(0,0,0,0.75);
+}
+
+.black-50 {
+  background-color: rgba(0,0,0,0.50);
+}
+
+.super-dark-cyan-75 {
+  background-color: rgba(0,26,51,0.75);
+}
+
+
+.lead {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  // verticall center
+  justify-content: center; // horizontally center
+  height: inherit;
+}
+
+#lead-1 {
+  width: 85%;
+  margin: 0 auto;
+  padding: 1em;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0) 100%);
+}
+
+#lead-1 h1 {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+#lead-1 p {
+  margin: 0;
+}
+
+.story .content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 1.2em;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75); 
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+
+  & p:first-of-type {
+    margin-top: 0;
+  }
+
+  & p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.with-vis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soon {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #000000;
+}
+
 
 //--------- Mobile Site -----------
 
@@ -707,7 +786,20 @@ header a:hover, .main-menu-item:hover {
     .subunit-label {
       font-size: 0.5em;
     }
-  
+
+    .lead-1 {
+      top:0%;
+      width: 100%;
+    }
+
+    .story .content, .soon {
+      width: 100%;
+    }
+
+    .with-vis {
+      flex-direction: column;
+    }
+    
 }
 
 @media only screen and (min-device-width: 850px) {
