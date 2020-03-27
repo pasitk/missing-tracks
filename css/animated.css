@@ -31,11 +31,18 @@ body {
   background-repeat: no-repeat;
 }
 
-#body-page-1 {
-  background-image: url("../img/bg-1.jpg");
+.body-content-page {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#body-page-1 {
+  background-image: url("../img/bg-1.jpg");
+}
+
+#body-page-2 {
+  background-image: url("../img/bg-2.jpg");
 }
 
 #intro-page {
@@ -553,11 +560,12 @@ header a:link, header a:visited, .main-menu-item {
   text-decoration: none;
 }
 
-header a:link, header a:visited, .main-menu-item {
+.content a:link, .content a:visited {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
-header a:hover, .main-menu-item:hover {
+header a:hover, .content a:hover, .main-menu-item:hover {
   color: #CCCCCC;
   cursor: pointer;
 }
@@ -718,6 +726,18 @@ header a:hover, .main-menu-item:hover {
   background-color: rgba(0, 26, 51, 0.75);
 }
 
+.white-75 {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.white-100 {
+  background-color: white;
+}
+
+.brick-3 {
+  background-color: #ba6b57;
+}
+
 .lead {
   font-size: 1.5em;
   font-weight: bold;
@@ -751,20 +771,54 @@ header a:hover, .main-menu-item:hover {
   margin: 0 auto;
   padding: 2em;
   font-size: 1.2em;
+}
+.story .content > p:first-of-type {
+  margin-top: 0;
+}
+.story .content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.content-box-75 {
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
 }
-.story .content p:first-of-type {
-  margin-top: 0;
+
+.content-box-25 {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
 }
-.story .content p:last-of-type {
-  margin-bottom: 0;
+
+.content-box-lite {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.box-with-radius {
+  border-radius: 15px;
 }
 
 .with-vis {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: bold;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 2em;
+  margin-inline-end: 3em;
+}
+
+blockquote > p {
+  font-style: normal;
+}
+
+.remark {
+  font-style: italic;
 }
 
 .soon {
