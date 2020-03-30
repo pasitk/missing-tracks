@@ -49,6 +49,10 @@ body {
   background-image: url('../img/bg-2.jpg');
 }
 
+#body-page-3 {
+  background-image: url('../img/bg-3.jpg');
+}
+
 #intro-page {
     position: fixed;
     padding: 0;
@@ -704,6 +708,18 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   background-color: #ba6b57;
 }
 
+.drowning-1 {
+  background-color: #a9957d;
+}
+
+.drowning-2 {
+  background-color: rgba(52, 72, 83, 0.9);
+}
+
+.text-on-translucent {
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+}
+
 .lead {
   font-size: 1.5em;
   font-weight: bold;
@@ -732,8 +748,7 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   margin: 0;
 }
 
-.story .content {
-  width: 50%;
+.content {
   margin: 0 auto;
   padding: 2em;
   font-size: 1.2em;
@@ -745,6 +760,16 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   & > p:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.content-normal {
+  @extend .content;
+  width: 50%;
+}
+
+.content-wide {
+  @extend .content;
+  width: 100%;
 }
 
 .content-box-75 {
@@ -766,10 +791,23 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   border-radius: 15px;
 }
 
+.box-with-radius-top-side {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.box-with-radius-down-side {
+  border-radius: 0px 0px 15px 15px;
+}
+
 .with-vis {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.with-vis-vertical {
+  width: 95%;
+  margin: 0 auto;
 }
 
 blockquote {

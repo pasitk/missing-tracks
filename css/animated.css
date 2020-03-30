@@ -45,6 +45,10 @@ body {
   background-image: url("../img/bg-2.jpg");
 }
 
+#body-page-3 {
+  background-image: url("../img/bg-3.jpg");
+}
+
 #intro-page {
   position: fixed;
   padding: 0;
@@ -560,12 +564,12 @@ header a:link, header a:visited, .main-menu-item {
   text-decoration: none;
 }
 
-.content a:link, .content a:visited {
+.content a:link, .content-wide a:link, .content-normal a:link, .content a:visited, .content-wide a:visited, .content-normal a:visited {
   color: #FFFFFF;
   text-decoration: underline;
 }
 
-header a:hover, .content a:hover, .main-menu-item:hover {
+header a:hover, .content a:hover, .content-wide a:hover, .content-normal a:hover, .main-menu-item:hover {
   color: #CCCCCC;
   cursor: pointer;
 }
@@ -738,6 +742,18 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   background-color: #ba6b57;
 }
 
+.drowning-1 {
+  background-color: #a9957d;
+}
+
+.drowning-2 {
+  background-color: rgba(52, 72, 83, 0.9);
+}
+
+.text-on-translucent {
+  text-shadow: 0px 1px 5px black;
+}
+
 .lead {
   font-size: 1.5em;
   font-weight: bold;
@@ -766,17 +782,24 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   margin: 0;
 }
 
-.story .content {
-  width: 50%;
+.content, .content-wide, .content-normal {
   margin: 0 auto;
   padding: 2em;
   font-size: 1.2em;
 }
-.story .content > p:first-of-type {
+.content > p:first-of-type, .content-wide > p:first-of-type, .content-normal > p:first-of-type {
   margin-top: 0;
 }
-.story .content > p:last-of-type {
+.content > p:last-of-type, .content-wide > p:last-of-type, .content-normal > p:last-of-type {
   margin-bottom: 0;
+}
+
+.content-normal {
+  width: 50%;
+}
+
+.content-wide {
+  width: 100%;
 }
 
 .content-box-75 {
@@ -798,10 +821,23 @@ header a:hover, .content a:hover, .main-menu-item:hover {
   border-radius: 15px;
 }
 
+.box-with-radius-top-side {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.box-with-radius-down-side {
+  border-radius: 0px 0px 15px 15px;
+}
+
 .with-vis {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.with-vis-vertical {
+  width: 95%;
+  margin: 0 auto;
 }
 
 blockquote {
@@ -876,7 +912,7 @@ blockquote > p {
     width: 100%;
   }
 
-  .story .content, .soon {
+  .story .content, .story .content-normal, .story .content-wide, .soon {
     width: 100%;
   }
 
@@ -904,7 +940,7 @@ blockquote > p {
     display: none;
   }
 
-  .content {
+  .content, .content-normal, .content-wide {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
   }
