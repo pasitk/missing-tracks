@@ -731,6 +731,10 @@ header a:hover, .content a:hover, .content-wide a:hover, .content-normal a:hover
   background-color: white;
 }
 
+.yellow-1 {
+  background-color: rgba(75, 53, 1, 0.75);
+}
+
 .brick-3 {
   background-color: #ba6b57;
 }
