@@ -307,8 +307,8 @@ body {
 .sub-menu {
   //https://codepen.io/jondaiello/details/WGZNZv
   width: auto;
-  border: 1px solid #999999;
-  border-radius: 0px 15px 0px 15px;
+  border: 1px solid #ffffff;
+  // border-radius: 0px 15px 0px 15px;
   border-left-width: 15px;
   border-left-color: #990000;
   margin-bottom: 0.75em;
@@ -322,10 +322,11 @@ body {
   // background: linear-gradient(120deg, #333333 0%,#999999 25%,#ff0000 50%,#660000 75%,#330000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   // background-size: 400% 400%;
   // background-repeat: no-repeat;
-  background: -moz-linear-gradient(120deg, #333333 0%, #999999 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(120deg, #333333 0%, #999999 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(120deg, #333333 0%, #999999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-repeat: no-repeat;
+  background: rgba(0,0,0,0.75);
+  // background: -moz-linear-gradient(120deg, #333333 0%, #666666 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(120deg, #333333 0%, #666666 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(120deg, #333333 0%, #666666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // background-repeat: no-repeat;
   transition: .3s ease;
 }
 
@@ -333,7 +334,7 @@ body {
   background: -moz-linear-gradient(120deg, #660000 0%, #330000 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(120deg, #660000 0%, #330000 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(120deg, #660000 0%, #330000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  box-shadow: 0 0 15px #ff1010;
+  box-shadow: 0 0 15px #CCCCCC;
 }
 
 
@@ -713,7 +714,7 @@ header a:hover, .content a:hover, .main-menu-item:hover {
 }
 
 .drowning-2 {
-  background-color: rgba(52, 72, 83, 0.9);
+  background-color: rgba(	33, 14, 1, 0.9);
 }
 
 .text-on-translucent {
