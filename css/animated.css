@@ -678,15 +678,12 @@ header a:hover,
 /* End of referenced code : Dropdown menu for mobile site */
 .main-menu-item-mobile {
   color: #ffffff;
-  /* change font color to align with theme color  */
-  padding: 7px 10px;
-  /* change padding size */
+  padding: 0.5em 0.5em;
   background-color: #333333;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   border-bottom: 1px solid #cccccc;
-  /* add 'border' to each menu item */
   cursor: pointer;
 }
 
@@ -780,7 +777,7 @@ header a:hover,
 .lead-inside {
   width: 100%;
   margin: 0 auto;
-  padding: 1.5em 5em;
+  padding: 1.5em 2em;
   background: black;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 0, 0, 0) 100%);
 }
@@ -792,10 +789,6 @@ header a:hover,
 
 .lead-inside p {
   margin: 0;
-}
-
-#lead-1 {
-  padding: 1.5em 2em;
 }
 
 .content, .content-wide, .content-wide-75, .content-normal,
@@ -905,6 +898,10 @@ blockquote > p {
 .right {
     display: block;
     width: 100%;
+  }
+
+  header {
+    padding: 2vw;
   }
 
   .mobile-menu {

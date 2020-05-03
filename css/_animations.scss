@@ -8,11 +8,9 @@ $bracket-duration: 2s;
 
 #body-index {
   background-color: #fff;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 1)
-    ),
+      rgba(0, 0, 0, 1)),
     url("../img/bg-0.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -247,6 +245,7 @@ $bracket-duration: 2s;
   100% {
     opacity: 1;
   }
+
   0% {
     opacity: 0;
   }
@@ -309,21 +308,18 @@ $bracket-duration: 2s;
 }
 
 .sub-menu:hover {
-  background: -moz-linear-gradient(
-    120deg,
-    #660000 0%,
-    #330000 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    120deg,
-    #660000 0%,
-    #330000 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    120deg,
-    #660000 0%,
-    #330000 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(120deg,
+      #660000 0%,
+      #330000 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(120deg,
+      #660000 0%,
+      #330000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(120deg,
+      #660000 0%,
+      #330000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   box-shadow: 0 0 15px #cccccc;
 }
 
@@ -357,7 +353,7 @@ a.sub-menu-link {
   color: #ffffff;
 }
 
-.menu > div {
+.menu>div {
   text-align: left;
 }
 
@@ -383,20 +379,24 @@ div.tooltip {
 }
 
 @-webkit-keyframes opacity-bracket {
+
   0%,
   100% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes change {
+
   0%,
   25% {
     transform: translate3d(0, 50%, 0);
   }
+
   75%,
   100% {
     transform: translate3d(0, 0, 0);
@@ -404,10 +404,12 @@ div.tooltip {
 }
 
 @-webkit-keyframes opacity-quote {
+
   0%,
   100% {
     opacity: 0;
   }
+
   15%,
   85% {
     opacity: 1;
@@ -415,47 +417,57 @@ div.tooltip {
 }
 
 @-webkit-keyframes animation-project-name {
+
   0%,
   50% {
     opacity: 0;
   }
+
   65%,
   100% {
     opacity: 1;
   }
+
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.5);
   }
 }
 
 @-webkit-keyframes opacity-intro-page {
+
   0%,
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes opacity-bracket {
+
   0%,
   100% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @-o-keyframes change {
+
   0%,
   25% {
     transform: translate3d(0, 50%, 0);
   }
+
   75%,
   100% {
     transform: translate3d(0, 0, 0);
@@ -463,10 +475,12 @@ div.tooltip {
 }
 
 @-o-keyframes opacity-quote {
+
   0%,
   100% {
     opacity: 0;
   }
+
   15%,
   85% {
     opacity: 1;
@@ -474,47 +488,57 @@ div.tooltip {
 }
 
 @-o-keyframes animation-project-name {
+
   0%,
   50% {
     opacity: 0;
   }
+
   65%,
   100% {
     opacity: 1;
   }
+
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.5);
   }
 }
 
 @-o-keyframes opacity-intro-page {
+
   0%,
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes opacity-bracket {
+
   0%,
   100% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes change {
+
   0%,
   25% {
     transform: translate3d(0, 50%, 0);
   }
+
   75%,
   100% {
     transform: translate3d(0, 0, 0);
@@ -522,10 +546,12 @@ div.tooltip {
 }
 
 @-moz-keyframes opacity-quote {
+
   0%,
   100% {
     opacity: 0;
   }
+
   15%,
   85% {
     opacity: 1;
@@ -533,47 +559,57 @@ div.tooltip {
 }
 
 @-moz-keyframes animation-project-name {
+
   0%,
   50% {
     opacity: 0;
   }
+
   65%,
   100% {
     opacity: 1;
   }
+
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.5);
   }
 }
 
 @-moz-keyframes opacity-intro-page {
+
   0%,
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
 @keyframes opacity-bracket {
+
   0%,
   100% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @keyframes change {
+
   0%,
   25% {
     transform: translate3d(0, 50%, 0);
   }
+
   40%,
   100% {
     transform: translate3d(0, 0, 0);
@@ -581,10 +617,12 @@ div.tooltip {
 }
 
 @keyframes opacity-quote {
+
   0%,
   100% {
     opacity: 0;
   }
+
   15%,
   85% {
     opacity: 1;
@@ -592,27 +630,33 @@ div.tooltip {
 }
 
 @keyframes animation-project-name {
+
   0%,
   50% {
     opacity: 0;
   }
+
   65%,
   100% {
     opacity: 1;
   }
+
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.5);
   }
 }
 
 @keyframes opacity-intro-page {
+
   0%,
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -668,7 +712,7 @@ header a:hover,
   align-items: center;
 }
 
-#site-name-header > a {
+#site-name-header>a {
   display: block;
   padding-top: 1vw;
   color: #ffffff;
@@ -694,6 +738,7 @@ header a:hover,
   cursor: pointer;
   opacity: 0;
 }
+
 /* End of referenced code : Checkbox for toggle open/close dropdown menu */
 
 #label-btn-toggle {
@@ -710,22 +755,31 @@ header a:hover,
 */
 #menu-toggle {
   /* Hamburger menu icon wrapper */
-  display: flex; /* Change display from 'block' to 'flex' */
-  flex-flow: column nowrap; /* Change positioning from 'top', 'left' to use 'justify-content', 'align-items' */
+  display: flex;
+  /* Change display from 'block' to 'flex' */
+  flex-flow: column nowrap;
+  /* Change positioning from 'top', 'left' to use 'justify-content', 'align-items' */
   justify-content: center;
   align-items: center;
-  height: 100%; /* add 'height' setting */
+  height: 100%;
+  /* add 'height' setting */
 }
 
-#menu-toggle div                /* Each line in hamburger menu icon */ {
+#menu-toggle div
+
+/* Each line in hamburger menu icon */
+  {
   width: 33px;
   height: 4px;
-  margin-top: 2.5px; /* change margin sizes */
+  margin-top: 2.5px;
+  /* change margin sizes */
   margin-bottom: 2.5px;
-  background: #cccccc; /* change color of each line to CCCCCC */
+  background: #cccccc;
+  /* change color of each line to CCCCCC */
   border-radius: 3px;
   z-index: 1;
 }
+
 /* End of referenced code : CSS Hamburger fold-out menu */
 
 /*
@@ -760,13 +814,13 @@ header a:hover,
 /* End of referenced code : Dropdown menu for mobile site */
 
 .main-menu-item-mobile {
-  color: #ffffff; /* change font color to align with theme color  */
-  padding: 7px 10px; /* change padding size */
+  color: #ffffff;
+  padding: 0.5em 0.5em;
   background-color: #333333;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  border-bottom: 1px solid #cccccc; /* add 'border' to each menu item */
+  border-bottom: 1px solid #cccccc;
   cursor: pointer;
 }
 
@@ -862,15 +916,13 @@ header a:hover,
 .lead-inside {
   width: 100%;
   margin: 0 auto;
-  padding: 1.5em 5em;
+  padding: 1.5em 2em;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.75) 40%,
-    rgba(0, 0, 0, 0.75) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.75) 40%,
+      rgba(0, 0, 0, 0.75) 60%,
+      rgba(0, 0, 0, 0) 100%);
 }
 
 .lead-inside h1 {
@@ -882,20 +934,16 @@ header a:hover,
   margin: 0;
 }
 
-#lead-1 {
-  padding: 1.5em 2em;
-}
-
 .content {
   margin: 0 auto;
   padding: 2em;
   font-size: 1.2em;
 
-  & > p:first-of-type {
+  &>p:first-of-type {
     margin-top: 0;
   }
 
-  & > p:last-of-type {
+  &>p:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -969,7 +1017,7 @@ blockquote {
   margin-inline-end: 3em;
 }
 
-blockquote > p {
+blockquote>p {
   font-style: normal;
 }
 
@@ -993,10 +1041,15 @@ blockquote > p {
   body {
     font-size: 36px;
   }
+
   .left,
   .right {
     display: block;
     width: 100%;
+  }
+
+  header {
+    padding: 2vw;
   }
 
   .mobile-menu {
@@ -1017,7 +1070,7 @@ blockquote > p {
     display: none;
   }
 
-  #btn-toggle:checked ~ .menu-dropdown-items {
+  #btn-toggle:checked~.menu-dropdown-items {
     display: block;
   }
 
@@ -1045,6 +1098,7 @@ blockquote > p {
 }
 
 @media only screen and (min-device-width: 850px) {
+
   .left,
   .right {
     display: inline-block;
@@ -1053,7 +1107,8 @@ blockquote > p {
   .desktop-menu {
     width: 60%;
     height: max-content;
-    display: flex; /* Use flex (1 row) in main menu for desktop site */
+    display: flex;
+    /* Use flex (1 row) in main menu for desktop site */
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -1074,17 +1129,4 @@ blockquote > p {
   body {
     font-size: 14px;
   }
-}
-
-// For britains missing article
-.britains-missing {
-
-  // .story.bg-color:nth-child(2n-1) {
-  //   color: #222;
-  //   background: #fff;
-
-  //   a {
-  //     color: #222;
-  //   }
-  // }
 }
