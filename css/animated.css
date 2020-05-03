@@ -46,6 +46,7 @@ body {
 
 #body-page-2 {
   background-image: url("../img/bg-2.jpg");
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 #body-page-3 {
@@ -563,18 +564,17 @@ header a:visited,
   text-decoration: none;
 }
 
-.content a:link, .content-wide a:link, .content-normal a:link,
-.content a:visited,
-.content-wide a:visited,
-.content-normal a:visited {
+.content-normal a:link,
+.content-normal a:visited,
+.content-wide-75 a:link,
+.content-wide-75 a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
 
 header a:hover,
-.content a:hover,
-.content-wide a:hover,
 .content-normal a:hover,
+.content-wide-75 a:hover,
 .main-menu-item:hover {
   color: #cccccc;
   cursor: pointer;
@@ -709,7 +709,7 @@ header a:hover,
 }
 
 .story {
-  padding: 2em;
+  padding: 4em 2em;
   color: #ffffff;
 }
 
@@ -734,8 +734,8 @@ header a:hover,
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.super-dark-cyan-75 {
-  background-color: rgba(0, 26, 51, 0.75);
+.super-dark-cyan-90 {
+  background-color: rgba(0, 26, 51, 0.9);
 }
 
 .white-75 {
@@ -759,7 +759,7 @@ header a:hover,
 }
 
 .drowning-2 {
-  background-color: rgba(33, 14, 1, 0.9);
+  background-color: #612a00;
 }
 
 .text-on-translucent {
@@ -768,7 +768,7 @@ header a:hover,
 
 .lead {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 300;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -777,37 +777,60 @@ header a:hover,
   height: inherit;
 }
 
-#lead-1 {
-  width: 85%;
+.lead-inside {
+  width: 100%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1.5em 5em;
   background: black;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
-#lead-1 h1 {
+.lead-inside h1 {
   margin: 0;
   margin-bottom: 0.5em;
 }
 
-#lead-1 p {
+.lead-inside p {
   margin: 0;
 }
 
-.content, .content-wide, .content-normal {
+#lead-1 {
+  padding: 1.5em 2em;
+}
+
+.content, .content-wide, .content-wide-75, .content-normal,
+.content-text-black {
   margin: 0 auto;
   padding: 2em;
   font-size: 1.2em;
 }
-.content > p:first-of-type, .content-wide > p:first-of-type, .content-normal > p:first-of-type {
+.content > p:first-of-type, .content-wide > p:first-of-type, .content-wide-75 > p:first-of-type, .content-normal > p:first-of-type,
+.content-text-black > p:first-of-type {
   margin-top: 0;
 }
-.content > p:last-of-type, .content-wide > p:last-of-type, .content-normal > p:last-of-type {
+.content > p:last-of-type, .content-wide > p:last-of-type, .content-wide-75 > p:last-of-type, .content-normal > p:last-of-type,
+.content-text-black > p:last-of-type {
   margin-bottom: 0;
 }
 
-.content-normal {
+.content-normal,
+.content-text-black {
   width: 50%;
+}
+
+.content-text-black a:hover {
+  color: #666666 !important;
+  cursor: pointer;
+}
+
+.content-text-black,
+.content-text-black a:link,
+.content-text-black a:visited {
+  color: #222;
+}
+
+.content-wide-75 {
+  width: 75%;
 }
 
 .content-wide {
@@ -827,6 +850,12 @@ header a:hover,
 .content-box-lite {
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.content-box-lite-type-2 {
+  border: 2px solid #eee;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .with-vis {
@@ -913,7 +942,8 @@ blockquote > p {
     width: 100%;
   }
 
-  .story .content, .story .content-normal, .story .content-wide,
+  .story .content, .story .content-normal,
+.story .content-text-black, .story .content-wide-75, .story .content-wide,
 .soon {
     width: 100%;
   }
@@ -943,7 +973,8 @@ blockquote > p {
     display: none;
   }
 
-  .content, .content-normal, .content-wide {
+  .content, .content-normal,
+.content-text-black, .content-wide-75, .content-wide {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
   }
@@ -952,29 +983,6 @@ blockquote > p {
   body {
     font-size: 14px;
   }
-}
-.britains-missing .story {
-  padding: 5em 2em;
-}
-.britains-missing .story.bg-img.lead #lead-1 {
-  font-weight: 300;
-  width: 100%;
-  padding: 1.5em 2em;
-}
-.britains-missing .story.bg-color .content-box-lite {
-  border: 2px solid #eee;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
-.britains-missing .story.bg-color .content-normal {
-  width: 75%;
-}
-.britains-missing .story.bg-color:nth-child(2n-1) {
-  color: #222;
-  background: #fff;
-}
-.britains-missing .story.bg-color:nth-child(2n-1) a {
-  color: #222;
 }
 
 /*# sourceMappingURL=animated.css.map */
