@@ -3,7 +3,12 @@ setTimeout(function(){
     introPage.remove();
 }, 10000);
 
-//https://stackoverflow.com/questions/18806210/generating-non-repeating-random-numbers-in-js
+/*
+*   Function to generate random numbers, used for selecting background vectors randomly
+*   This code was copied from Stackoverflow comment by Ben Jackson
+*   accessed 20-02-2020
+*   //https://stackoverflow.com/questions/18806210/generating-non-repeating-random-numbers-in-js
+*/
 function shuffle(array) {
     var i = array.length,
         j = 0,
@@ -20,6 +25,7 @@ function shuffle(array) {
 
     return array;
 }
+/* End of referenced code : Function to generate random numbers, used for selecting background vectors randomly */
 
 const bgOne = document.querySelector('#bg-one');
 const widthOne = 150;
@@ -77,9 +83,6 @@ for (var i = 0; i<numOfPeopleFour; i++) {
 
 const persons = document.querySelectorAll('.person');
 [].forEach.call(persons, function(person) {
-    // do whatever
     var time = Math.random() * 15;
-    // console.log("a");
-    // console.log(time);
     person.style.setProperty('--animation-time',time +'s');
 });

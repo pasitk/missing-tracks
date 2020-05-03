@@ -25,6 +25,17 @@ body {
   --animation-time: 2s;
 }
 
+.body-content-page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+*   Background Images by Mike Chai on pexels.com
+*   accessed 01-03-2020
+*   https://www.pexels.com/photo/time-lapse-photography-of-people-walking-on-pedestrian-lane-842339/
+*/
 #body-index {
   background-color: #fff;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), black), url("../img/bg-0.jpg");
@@ -34,23 +45,41 @@ body {
   background-repeat: no-repeat;
 }
 
-.body-content-page {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+/*
+*   Background Images by Leo Cardelli on pexels.com
+*   accessed 01-03-2020
+*   https://www.pexels.com/photo/photography-of-person-walking-on-road-1236701/
+*/
 #body-page-1 {
   background-image: url("../img/bg-1.jpg");
 }
 
+/*
+*   Background Images by Kat Jayne on pexels.com
+*   accessed 15-03-2020
+*   https://www.pexels.com/photo/architecture-boys-brick-wall-bricks-551594/
+*/
 #body-page-2 {
   background-image: url("../img/bg-2.jpg");
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+/*
+*   Background Images by 'Download a pic Donate a buck' on pexels.com
+*   accessed 29-03-2020
+*   https://www.pexels.com/photo/sunset-love-lake-resort-54379/
+*/
 #body-page-3 {
   background-image: url("../img/bg-3.jpg");
+}
+
+/*
+*   Background Images by Lorenzo on pexels.com
+*   accessed 03-05-2020
+*   https://www.pexels.com/photo/adventure-city-country-destination-240834/
+*/
+#body-page-4 {
+  background-image: url("../img/bg-4.jpg");
 }
 
 #intro-page {
@@ -81,6 +110,13 @@ body {
   height: inherit;
 }
 
+/*
+*   Text Animation Effect for Splash Page
+*   This code was adapted from CodePen post by Yoann
+*   to fit with the splash page: change duration, font, color, message
+*   accessed 19-02-2020
+*   https://codepen.io/yoannhel/pen/sJpDj
+*/
 #message {
   position: fixed;
   z-index: -1;
@@ -200,6 +236,7 @@ body {
   font-weight: bold;
 }
 
+/* End of referenced code : Text Animation Effect for Splash Page */
 #bg-one {
   bottom: 50px;
   position: fixed;
@@ -243,11 +280,19 @@ body {
     opacity: 0;
   }
 }
+/*
+*   Animation of human vectors in the background of Splash Page
+*   This code was adapted from CodePen post by Robin Rendle
+*   to make human vectors fade out gradually, using together with JavaScript
+*   accessed 13-02-2020
+*   https://codepen.io/robinrendle/pen/397deea9cfff5c5973d0051765ae7bef?editors=1111
+*/
 .person {
   animation: flicker var(--animation-time) ease reverse 1 forwards;
   fill: #000000;
 }
 
+/* End of referenced code : Animation of human vectors in the background of Splash Page */
 #content-page {
   width: 100%;
   height: 100%;
@@ -297,11 +342,8 @@ body {
 
 .sub-menu:hover {
   background: -moz-linear-gradient(120deg, #660000 0%, #330000 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(120deg, #660000 0%, #330000 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(120deg, #660000 0%, #330000 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   box-shadow: 0 0 15px #cccccc;
 }
 

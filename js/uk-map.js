@@ -1,3 +1,11 @@
+/*
+*   UK Map with Tooltip
+*   This code was adapted from tutorials on bost.ocks.org by Mike Bostock and bl.ocks.org by Tiffany France
+*   accessed 13-02-2020 and 20-02-2020 respectively
+*   https://bost.ocks.org/mike/map/
+*   https://bl.ocks.org/tiffylou/88f58da4599c9b95232f5c89a6321992
+*/
+
 d3.json('json/uk_countries.json').then(function(json) {
 
     console.log(json);
@@ -77,3 +85,4 @@ d3.json('json/uk_countries.json').then(function(json) {
     
 })
   
+/* End of referenced code : UK Map with Tooltip */
