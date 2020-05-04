@@ -1090,10 +1090,33 @@ blockquote>p {
 .sub-topic {
   font-size: 1.3em;
   font-weight: bold;
-  background-color: #5c374c;
   padding: 0.5em;
   margin-top: 2em;
   margin-bottom: 1em;
+}
+
+.purple-1 {
+  background-color: #5c374c;
+}
+
+.dark-red-1 {
+  background-color: #660000;
+}
+
+table {
+  font-size: 1em;
+  color: #FFFFFF;
+  width: 50%;
+  margin: 0 auto;
+}
+
+td {
+  border-bottom: 1px solid #555555;
+}
+
+td.value {
+  width: 20%;
+  text-align: center;
 }
 
 //--------- Mobile Site -----------
