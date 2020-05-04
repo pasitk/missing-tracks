@@ -765,8 +765,8 @@ header a:hover,
   background-color: black;
 }
 
-.black-75 {
-  background-color: rgba(0, 0, 0, 0.75);
+.black-85 {
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .black-50 {
@@ -775,10 +775,6 @@ header a:hover,
 
 .super-dark-cyan-90 {
   background-color: rgba(0, 26, 51, 0.9);
-}
-
-.white-75 {
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .white-100 {
@@ -799,6 +795,14 @@ header a:hover,
 
 .drowning-2 {
   background-color: #612a00;
+}
+
+.how-can-find-1 {
+  background-color: #5c374c;
+}
+
+.how-can-find-2 {
+  background-color: #985277;
 }
 
 .text-on-translucent {
@@ -929,6 +933,15 @@ blockquote > p {
   text-align: center;
   font-weight: bold;
   text-shadow: 0px 0px 10px #000000;
+}
+
+.sub-topic {
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #5c374c;
+  padding: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-device-width: 850px) {
