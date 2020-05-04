@@ -7,7 +7,7 @@ setTimeout(function(){
 *   Function to generate random numbers, used for selecting background vectors randomly
 *   This code was copied from Stackoverflow comment by Ben Jackson
 *   accessed 20-02-2020
-*   //https://stackoverflow.com/questions/18806210/generating-non-repeating-random-numbers-in-js
+*   https://stackoverflow.com/questions/18806210/generating-non-repeating-random-numbers-in-js
 */
 function shuffle(array) {
     var i = array.length,
@@ -27,6 +27,22 @@ function shuffle(array) {
 }
 /* End of referenced code : Function to generate random numbers, used for selecting background vectors randomly */
 
+/*
+*   The code below is used to generate the background in the splash page
+*   References for all vectors used in the splash page
+*   1. https://publicdomainvectors.org/en/free-clipart/Woman-silhouette-vector-graphics/14771.html by Openclipart
+*   2. https://openclipart.org/detail/21968/person-outline-2-by-rejon by Rejon
+*   3. https://openclipart.org/detail/250869/victory-boy-silhouette by GDJ
+*   4. https://openclipart.org/detail/250865/ambiguous-female-silhouette by GDJ
+*   5. https://openclipart.org/detail/273477/little-girl-and-butterfly-silhouette by GDJ
+*   6. https://openclipart.org/detail/270416/pregnancy-silhouette by GDJ
+*   7. https://publicdomainvectors.org/en/free-clipart/Lady-silhouette-vector-clip-art/7889.html by Openclipart
+*   8. https://openclipart.org/detail/202674/male-silhouette-presenting-or-pointing-by-pnx-202674 by pax
+*   9. https://publicdomainvectors.org/en/free-clipart/Man-silhouette-vector-illustration/14773.html by Openclipart
+*   10. https://openclipart.org/detail/24896/-by--24896 by radacina
+*   accessed all of these vectors : 20-02-2020
+*   
+*/
 const bgOne = document.querySelector('#bg-one');
 const widthOne = 150;
 var ranNumsOne = shuffle([1,2,3,4,5,6,7,8,9,10]);

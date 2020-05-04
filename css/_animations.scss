@@ -66,6 +66,16 @@ $bracket-duration: 2s;
   background-image: url("../img/bg-4.jpg");
 }
 
+/*
+*   Background Images by Kevin Ku on pexels.com
+*   accessed 04-05-2020
+*   https://www.pexels.com/photo/coding-computer-data-depth-of-field-577585/
+*/
+#body-page-5 {
+  background-image: url("../img/bg-5.jpg");
+}
+
+
 #intro-page {
   position: fixed;
   padding: 0;
@@ -943,6 +953,16 @@ header a:hover,
   align-items: center; // verticall center
   justify-content: center; // horizontally center
   height: inherit;
+}
+
+#data-and-methodology-lead {
+  font-size: 1.25em;
+  background-color: #660000;
+  margin-top: 2em;
+
+  h1 {
+    margin: 0;
+  }
 }
 
 .lead-inside {
