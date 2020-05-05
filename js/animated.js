@@ -1,6 +1,9 @@
 setTimeout(function(){ 
     var introPage = document.getElementById('intro-page');
     introPage.remove();
+
+    var creditIndex = document.getElementById('credit-index');
+    creditIndex.style.zIndex = 0;
 }, 10000);
 
 /*

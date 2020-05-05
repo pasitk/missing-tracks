@@ -7,9 +7,6 @@
 */
 
 d3.json('json/uk_countries.json').then(function(json) {
-
-    console.log(json);
-
     var projection = d3.geoMercator()
         .scale(300)
         .fitExtent([[0, 0], [500, 500]], json);
@@ -56,14 +53,10 @@ d3.json('json/uk_countries.json').then(function(json) {
         tooltip.transition()    
         .duration(200)    
         .style("opacity", .9);
-        // if (d.properties.ctry17nm == "England") {
         tooltip.html('<b>Children : </b>'+numFormatter.format(csvData[countryCode[d.properties.ctry17nm]].Children)+
             '<br/><b>Adults : </b>'+numFormatter.format(csvData[countryCode[d.properties.ctry17nm]].Adults)+
             '<br/><b>Unknown : </b>'+numFormatter.format(csvData[countryCode[d.properties.ctry17nm]].Unknown)+
             '<br/><b>Total : </b>'+numFormatter.format(csvData[countryCode[d.properties.ctry17nm]].Total));
-        // } else {
-            // tooltip.html('<b>'+d.properties.ctry17nm+'</b>');
-        // }
         
         tooltip.style("left", (d3.event.pageX) + "px")   
         .style("top", (d3.event.pageY - 28) + "px");  

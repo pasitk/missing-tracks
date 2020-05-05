@@ -1,65 +1,89 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/animated.css">
-        <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/icon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <script src="//d3js.org/d3.v5.min.js" charset="utf-8"></script>
-        <script src="//d3js.org/topojson.v1.min.js"></script>
-        <title>Missing Tracks</title>
-    </head>
-    <body id="body-index">
-        <div id="intro-page">
-            <div id="message">
-                <p class="text-1">1 Person is reported missing </p>
-                <ul class="text-2">
-                    <li class="text-item">...</li>
-                    <li class="text-item seconds">every 90 seconds</li>
-                </ul>
-            </div>
-            <div id="project-name">
-                <p>Missing Tracks</p>
-            </div>
-            <div id="bg-one"></div>
-            <div id="bg-two"></div>
-            <div id="bg-three"></div>
-            <div id="bg-four"></div>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/animated.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="//d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <title>Missing Tracks</title>
+</head>
+
+<body id="body-index">
+    <div id="intro-page">
+        <div class="credit" id="credit-splash">
+            Vector Credits:
+            <b>Openclipart</b> (Link: <a href="https://publicdomainvectors.org/en/free-clipart/Woman-silhouette-vector-graphics/14771.html"
+                target="_blank">1</a>, <a
+                href="https://publicdomainvectors.org/en/free-clipart/Lady-silhouette-vector-clip-art/7889.html"
+                target="_blank">2</a>, <a
+                href="https://publicdomainvectors.org/en/free-clipart/Man-silhouette-vector-illustration/14773.html"
+                target="_blank">3</a>), <b>GDJ</b> (Link: <a
+                href="https://openclipart.org/detail/250869/victory-boy-silhouette" target="_blank">1</a>,
+            <a href="https://openclipart.org/detail/250865/ambiguous-female-silhouette" target="_blank">2</a>, <a
+                href="https://openclipart.org/detail/273477/little-girl-and-butterfly-silhouette" target="_blank">3</a>,
+            <a href="https://openclipart.org/detail/270416/pregnancy-silhouette" target="_blank">4</a>), <b>Rejon</b>
+            (<a href="https://openclipart.org/detail/21968/person-outline-2-by-rejon" target="_blank">Link</a>), <b>pax</b> (<a
+                href="https://openclipart.org/detail/202674/male-silhouette-presenting-or-pointing-by-pnx-202674"
+                target="_blank">Link</a>), and <b>radacina</b> (<a
+                href="https://openclipart.org/detail/24896/-by--24896" target="_blank">Link</a>)
         </div>
-        <div id="content-page">
-            <div class="left">
-                <div class="quote">The number of missing incidents in the UK (2016/17)</div>
-                <div id="map">
-                </div>
-            </div>
-            <div class="right">
-                <div class="header-1">
-                    <div class="topic site-name">Missing Tracks</div>
-                    <div class="topic sub">Missing People in England and Wales</div>
-                    <div class="authors">by Edurne Morillo, Pasit Kongkunakornkul, Shanna Jones</div>
-                </div>
-                <div class="menu">
-                    <a href="britains-missing.html" target="_blank" class="sub-menu-link">
-                        <div class="sub-menu">WHAT: BRITAIN'S MISSING</div>
-                    </a>
-                    <a href="who-is-missing.html" target="_blank" class="sub-menu-link">
-                        <div class="sub-menu">WHO IS MISSING?</div>
-                    </a>
-                    <a href="why-are-they-missing.html" target="_blank" class="sub-menu-link">
-                        <div class="sub-menu">WHY ARE THEY MISSING?</div>
-                    </a>
-                    <a href="how-can-we-find-them.html" target="_blank" class="sub-menu-link">
-                        <div class="sub-menu">HOW CAN WE FIND THEM?</div>
-                    </a>
-                    <a href="data-and-methodology.html" target="_blank" class="sub-menu-link">
-                        <div class="sub-menu">DATA AND METHODOLOGY</div>
-                    </a>
-                </div>
+        <div id="message">
+            <p class="text-1">1 Person is reported missing </p>
+            <ul class="text-2">
+                <li class="text-item">...</li>
+                <li class="text-item seconds">every 90 seconds</li>
+            </ul>
+        </div>
+        <div id="project-name">
+            <p>Missing Tracks</p>
+        </div>
+        <div id="bg-one"></div>
+        <div id="bg-two"></div>
+        <div id="bg-three"></div>
+        <div id="bg-four"></div>
+    </div>
+    <div id="content-page">
+        <div class="credit" id="credit-index">
+            Photo: <a href="https://www.pexels.com/photo/time-lapse-photography-of-people-walking-on-pedestrian-lane-842339/"
+                target="_blank">'Mike Chai' on pexels.com</a>
+        </div>
+        <div class="left">
+            <div class="quote">The number of missing incidents in the UK (2016/17)</div>
+            <div id="map">
             </div>
         </div>
-        <script src="js/animated.js"></script>
-        <script src="js/uk-map.js"></script>
-    </body>
+        <div class="right">
+            <div class="header-1">
+                <div class="topic site-name">Missing Tracks</div>
+                <div class="topic sub">Missing People in England and Wales</div>
+                <div class="authors">by Edurne Morillo, Pasit Kongkunakornkul, Shanna Jones</div>
+            </div>
+            <div class="menu">
+                <a href="britains-missing.html" target="_blank" class="sub-menu-link">
+                    <div class="sub-menu">WHAT: BRITAIN'S MISSING</div>
+                </a>
+                <a href="who-is-missing.html" target="_blank" class="sub-menu-link">
+                    <div class="sub-menu">WHO IS MISSING?</div>
+                </a>
+                <a href="why-are-they-missing.html" target="_blank" class="sub-menu-link">
+                    <div class="sub-menu">WHY ARE THEY MISSING?</div>
+                </a>
+                <a href="how-can-we-find-them.html" target="_blank" class="sub-menu-link">
+                    <div class="sub-menu">HOW CAN WE FIND THEM?</div>
+                </a>
+                <a href="data-and-methodology.html" target="_blank" class="sub-menu-link">
+                    <div class="sub-menu">DATA AND METHODOLOGY</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/animated.js"></script>
+    <script src="js/uk-map.js"></script>
+</body>
+
 </html>

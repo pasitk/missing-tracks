@@ -606,10 +606,13 @@ header {
   color: #ffffff;
   padding: 0 1.5vw 0 1.5vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 header a:link,
 header a:visited,
+.credit a:link,
+.credit a:visited,
 .main-menu-item {
   color: #ffffff;
   text-decoration: none;
@@ -624,6 +627,7 @@ header a:visited,
 }
 
 header a:hover,
+.credit a:hover,
 .content-normal a:hover,
 .content-wide-75 a:hover,
 .main-menu-item:hover {
@@ -827,6 +831,7 @@ header a:hover,
   align-items: center;
   justify-content: center;
   height: inherit;
+  position: relative;
 }
 
 #data-and-methodology-lead {
@@ -844,6 +849,7 @@ header a:hover,
   padding: 1.5em 2em;
   background: black;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 0, 0, 0) 100%);
+  z-index: -1;
 }
 
 .lead-inside h1 {
@@ -983,6 +989,48 @@ td {
 td.value {
   width: 20%;
   text-align: center;
+}
+
+.credit {
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
+  font-size: 0.7em;
+  font-style: italic;
+  z-index: 0;
+  color: #FFFFFF;
+}
+
+#credit-method {
+  text-align: right;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 300;
+  background-color: #333333;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+#credit-method a {
+  text-decoration: none;
+}
+
+#credit-index {
+  z-index: -1;
+  font-weight: 300;
+}
+
+#credit-splash {
+  font-size: 0.8em;
+}
+
+#credit-splash,
+#credit-splash a:link,
+#credit-splash a:visited {
+  color: #666666;
+}
+
+#credit-splash a:hover {
+  color: #000000;
 }
 
 @media only screen and (max-device-width: 850px) {
