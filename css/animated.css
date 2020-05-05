@@ -761,7 +761,7 @@ header a:hover,
 }
 
 .story {
-  padding: 4em 2em;
+  padding: 4em 1.5em;
   color: #ffffff;
 }
 
@@ -1019,8 +1019,18 @@ td.value {
   font-weight: 300;
 }
 
+#credit-index-mobile {
+  position: relative;
+  text-align: right;
+  font-weight: 300;
+  right: 0;
+  bottom: 0;
+}
+
 #credit-splash {
+  width: 80%;
   font-size: 0.8em;
+  text-align: right;
 }
 
 #credit-splash,
@@ -1092,6 +1102,14 @@ td.value {
   .with-vis {
     flex-direction: column;
   }
+
+  #credit-index {
+    display: none;
+  }
+
+  #credit-index-mobile {
+    display: block;
+  }
 }
 @media only screen and (min-device-width: 850px) {
   .left,
@@ -1118,6 +1136,14 @@ td.value {
 .content-text-black, .content-wide-75, .content-wide {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
+  }
+
+  #credit-index {
+    display: block;
+  }
+
+  #credit-index-mobile {
+    display: none;
   }
 }
 @media only screen and (min-device-width: 850px) and (max-device-width: 1024px) {
