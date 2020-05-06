@@ -19,6 +19,10 @@ body {
   font-size: 16px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 :root {
@@ -857,17 +861,17 @@ header a:hover,
   margin: 0;
 }
 
-.content, .content-wide, .content-wide-75, .content-normal,
+.content, .content-wide-75, .content-normal,
 .content-text-black {
   margin: 0 auto;
   padding: 2em;
   font-size: 1.2em;
 }
-.content > p:first-of-type, .content-wide > p:first-of-type, .content-wide-75 > p:first-of-type, .content-normal > p:first-of-type,
+.content > p:first-of-type, .content-wide-75 > p:first-of-type, .content-normal > p:first-of-type,
 .content-text-black > p:first-of-type {
   margin-top: 0;
 }
-.content > p:last-of-type, .content-wide > p:last-of-type, .content-wide-75 > p:last-of-type, .content-normal > p:last-of-type,
+.content > p:last-of-type, .content-wide-75 > p:last-of-type, .content-normal > p:last-of-type,
 .content-text-black > p:last-of-type {
   margin-bottom: 0;
 }
@@ -892,10 +896,6 @@ header a:hover,
   width: 75%;
 }
 
-.content-wide {
-  width: 100%;
-}
-
 .content-box-type-1 {
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -916,11 +916,6 @@ header a:hover,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.with-vis-vertical {
-  width: 95%;
-  margin: 0 auto;
 }
 
 blockquote {
@@ -1051,7 +1046,7 @@ td.value {
   }
 
   .story .content, .story .content-normal,
-.story .content-text-black, .story .content-wide-75, .story .content-wide {
+.story .content-text-black, .story .content-wide-75 {
     width: 100%;
   }
 
@@ -1093,7 +1088,7 @@ td.value {
   }
 
   .content, .content-normal,
-.content-text-black, .content-wide-75, .content-wide {
+.content-text-black, .content-wide-75 {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
   }

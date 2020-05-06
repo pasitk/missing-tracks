@@ -1022,11 +1022,6 @@ header a:hover,
   width: 75%;
 }
 
-.content-wide {
-  @extend .content;
-  width: 100%;
-}
-
 .content-box-type-1 {
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -1048,11 +1043,6 @@ header a:hover,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.with-vis-vertical {
-  width: 95%;
-  margin: 0 auto;
 }
 
 blockquote {
