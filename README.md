@@ -14,6 +14,4 @@ This project is part of the module MCT542 Digital Investigation in the spring se
 
 ## Name of contributors:
 
-Edurne Morillo
-Pasit Kongkunakornkul
-Shanna Jones
+Edurne Morillo, Pasit Kongkunakornkul, Shanna Jones
